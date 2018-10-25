@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>KBP Departures Timetable</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="/img/favicon.png" type="images/png">
+    <link rel="apple-touch-icon" href="/img/favicon.png" type="images/png">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <!--BEGIN header-->
+      <header class="header">
+        <div class="header__bottom">
+          <div class="header__left"><i class="header__icon"><svg viewBox="0 0 42 14.02" class="icon-plane">
+                <g>
+                  <path d="M41.89,6.64a6.59,6.59,0,0,1-4.17,2.45C29.36,10.66,21,12.29,12.64,13.9c-2.19.42-4.23-.37-6.3-.85-1.16-.27-2.28-.7-3.42-1.07l0-.28,12.6-2.64L10.59,1.25A1.19,1.19,0,0,1,10.76,1c1.36-1.23,1.36-1.23,3-.34,3.61,2,7.21,4,10.85,6a2.86,2.86,0,0,0,1.74.27c3.76-.68,7.51-1.44,11.27-2.16A4.79,4.79,0,0,1,42,5.82Z"></path>
+                  <path d="M0,7.09c.94-.87,1.76-.53,2.67.14C4,8.19,5.37,9,7,10.07c-1.53.34-2.84.65-4.16.88-.19,0-.5-.28-.66-.51C1.41,9.4.71,8.34,0,7.29Z"></path>
+                </g>
+              </svg></i>
+            <h1 class="header__title">Відліт</h1>
+          </div>
+          <div class="header__right"><span class="header__date"></span><span class="header__time"></span></div>
+        </div>
+      </header>
+      <!--END header-->
+      <div class="timetable">
+        <div class="timetable__wrap out today">
+          <table>
+            <thead class="timetable__head">
+              <tr>
+                <th class="timetable__title">Рейс</th>
+                <th class="timetable__title timetable__title--center">Час</th>
+                <th class="timetable__title">Призначення</th>
+                <th class="timetable__title timetable__title--center">Перевізник</th>
+                <th class="timetable__title">Термінал</th>
+                <th class="timetable__title">Гейт</th>
+                <th class="timetable__title timetable__title--center">Статус</th>
+              </tr>
+            </thead>
+            <tbody class="timetable__main"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/config.js" defer></script>
+    <script type="text/javascript" src="https://kbp.aero/wp-content/themes/borispol-magenta/js/board.js?v=1" defer></script>
+    <script type="text/javascript" src="js/app.js?v=1" defer></script>
+  </body>
+
+</html>

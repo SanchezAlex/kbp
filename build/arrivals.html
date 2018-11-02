@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>KBP Departures Timetable</title>
+    <title>KBP Arrivals Timetable</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
@@ -22,20 +22,22 @@
       <!--BEGIN header-->
       <header class="header">
         <div class="header__bottom">
-          <div class="header__left"><i class="header__icon"><svg viewBox="0 0 42 14.02" class="icon-plane">
+          <div class="header__left"><i class="header__icon"><svg viewBox="0 0 40 19.35" class="icon-plane">
                 <g>
-                  <path d="M41.89,6.64a6.59,6.59,0,0,1-4.17,2.45C29.36,10.66,21,12.29,12.64,13.9c-2.19.42-4.23-.37-6.3-.85-1.16-.27-2.28-.7-3.42-1.07l0-.28,12.6-2.64L10.59,1.25A1.19,1.19,0,0,1,10.76,1c1.36-1.23,1.36-1.23,3-.34,3.61,2,7.21,4,10.85,6a2.86,2.86,0,0,0,1.74.27c3.76-.68,7.51-1.44,11.27-2.16A4.79,4.79,0,0,1,42,5.82Z"></path>
-                  <path d="M0,7.09c.94-.87,1.76-.53,2.67.14C4,8.19,5.37,9,7,10.07c-1.53.34-2.84.65-4.16.88-.19,0-.5-.28-.66-.51C1.41,9.4.71,8.34,0,7.29Z"></path>
+                  <path d="M.75,7.17,13.84,9.93l-1-6.83c-.11-.72-.23-1.44-.3-2.17a.61.61,0,0,1,.25-.51A6.07,6.07,0,0,1,14.28,0c.21,0,.52.23.67.43q4.16,5.42,8.29,10.87a2.66,2.66,0,0,0,1.68,1.1c3.81.82,7.61,1.69,11.41,2.53a5.89,5.89,0,0,1,3.22,1.85c.7.79.57,1.48-.38,1.94a5.69,5.69,0,0,1-3.76.48q-13.5-3-27-6.13a3,3,0,0,1-1.09-.49c-2-1.53-4-3.08-6-4.64a5.29,5.29,0,0,1-.6-.65Z"></path>
+                  <path d="M5.3,7.36c-1.43-.29-2.74-.55-4-.84-.2,0-.49-.23-.52-.39C.46,4.72.24,3.31,0,1.89a1.22,1.22,0,0,1,.24-.12c1.3-.27,1.31-.27,2.05.86L5,6.74C5.08,6.91,5.16,7.1,5.3,7.36Z"></path>
+                  <circle cx="16.73" cy="17.15" r="1.08" transform="translate(-1.59 1.71) rotate(-5.59)"></circle>
+                  <circle cx="20.86" cy="17.82" r="1.08" transform="translate(-1.64 2.12) rotate(-5.59)"></circle>
                 </g>
               </svg></i>
-            <h1 class="header__title">Відліт</h1>
+            <h1 class="header__title">Приліт</h1>
           </div>
           <div class="header__right"><span class="header__date"></span><span class="header__time"></span></div>
         </div>
       </header>
       <!--END header-->
       <div class="timetable">
-        <div class="timetable__wrap out today">
+        <div class="timetable__wrap in today">
           <table>
             <thead class="timetable__head">
               <tr>
@@ -44,7 +46,6 @@
                 <th class="timetable__title">Призначення</th>
                 <th class="timetable__title">Перевізник</th>
                 <th class="timetable__title">Термінал</th>
-                <th class="timetable__title">Гейт</th>
                 <th class="timetable__title timetable__title--center">Статус</th>
               </tr>
             </thead>
@@ -56,7 +57,7 @@
     <!--END out-->
     <!--LOAD SCRIPTS-->
     <script type="text/javascript" src="js/config.js" defer></script>
-    <script type="text/javascript" src="https://kbp.aero/wp-content/themes/borispol-magenta/js/board.js?v=1" defer></script>
+    <script type="text/javascript" id="db" src="https://kbp.aero/wp-content/themes/borispol-magenta/js/board.js" defer></script>
     <script type="text/javascript" src="js/app.js?v=1" defer></script>
   </body>
 
